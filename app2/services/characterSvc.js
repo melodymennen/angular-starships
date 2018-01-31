@@ -4,7 +4,7 @@ angular. module('pokemon').service('characterSvc', function($http){
             return {
                 name: response.data.name,
                 weight: response.data.weight,
-                pictureUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+                pictureUrl: response.data.sprites.front_default
             }
         })
     }
